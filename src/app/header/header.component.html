@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>Social Media App</h1>
+    <div class="menu-buttons">
+        <button mat-flat-button color="primary" *ngIf="this.router.url != '/friends'" (click)="goToFriends()">Home</button>
+        <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+    </div>
+</div>

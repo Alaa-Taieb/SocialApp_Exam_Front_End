@@ -1,0 +1,31 @@
+.mat-dialog-container {
+    background-color: #f5f5f5;
+    border: 2px solid #ff5252;
+    border-radius: 8px;
+    padding: 30px;
+}
+div[mat-dialog-content]{
+    overflow: visible;
+}
+h1[mat-dialog-title], h2{
+    color: #ff5252;
+    margin-top: 0;
+}
+
+strong {
+    color: #ff5252;
+}
+
+p{
+    margin-top: 20px;
+}
+
+button[mat-button] {
+    background-color: #ff5252;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}

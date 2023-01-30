@@ -1,0 +1,51 @@
+<form [formGroup]="myForm" (ngSubmit)="register()">
+
+    <h2>Register</h2>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="name" formControlName="name" required>
+        <mat-error *ngIf="name.invalid && name.touched">
+            Please enter a valid name!
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Alias</mat-label>
+        <input matInput placeholder="alias" formControlName="alias" required>
+        <mat-error *ngIf="alias.invalid && alias.touched">
+            Please enter a valid Alias!
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="email" formControlName="email" required>
+        <mat-error *ngIf="email.invalid && email.touched">
+            Please enter a valid email!
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="password" formControlName="password" required>
+        <mat-hint>Password needs to be atleast 5 characters long.</mat-hint>
+        <mat-error *ngIf="password.invalid && password.touched">
+            Please enter a valid password!
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" placeholder="Confirm Password" formControlName="confirmPassword" required>
+        <mat-hint>Must match the the password field.</mat-hint>
+        <mat-error *ngIf="true">
+            Passwords don't match!
+        </mat-error>
+    </mat-form-field>
+    
+    <section>
+        <button [disabled]="myForm.invalid" type="submit" mat-stroked-button color="primary">Register</button>
+    </section>
+    
+</form>

@@ -1,0 +1,25 @@
+table{
+    width: 100%;
+}
+
+.buttons-container{
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mat-column-alias{
+    text-align: center;
+}
+
+.mat-column-action{
+    text-align: center;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(116, 116, 231);
+}
